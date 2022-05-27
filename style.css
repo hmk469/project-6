@@ -1,387 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
-    margin: 0;padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
     scroll-behavior: smooth;
 }
-.darkmood{
-  background-color: black;
-  color: white;
-}
-.Menudarkmood{
-  color: white;
-}
-:root{
-    --main-color:#3186e7;
+@media(max-width:1050px){
+  html{
+    font-size: 80%;
+  }
 }
 nav{
-  align-items: center;
-  position: fixed;
-  width: 100%;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background-color: white;
-    z-index: 1;
+    overflow-y: scroll;
+    height: 100vh;
 }
-.navBg{
-background-color: rgb(35, 35, 35);
-box-shadow: none;
-border-bottom: 1px solid white;
-border-style: outset;
-}
-nav .logo {
-   color: var(--main-color);
-   font-weight:bolder;
-   padding-left: 3%;
-}
- .Menu{
-  width: 50%;
-  background-color: white;
-}
-.Menudarkmood{
-  background-color: black;
+nav h3 {
+color: rgb(47, 30, 237);
 }
 nav a{
-    padding: 0% 2%;
-    color: black;
+  text-decoration: none;
+  display: block;
+  color: blue;
 }
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-  width:20%
-}
-.theme-switch-wrapper em{
-  margin-left: 3%;
-}
-.theme-switch {
-  display: inline-block;
-  height: 30px;
-  position: relative;
-  width: 65px;
-}
-.theme-switch input {
-  display:none;
-}
-
-.slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0px;
-  top: 0;
-  transition: .4s;
-}
-
-.slider:before {
-  background-color: black;
-  bottom: 2px;
-  content: "";
-  height: 25px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 25px;
-}
-
-input:checked + .slider {
-  background-color: #66bb6a;
-}
-input:checked + .slider:before {
-  transform: translateX(30px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-.hanbargar{
-  display: none;
-}
-nav .theme-switch-wrapper i{
-  margin: 0 1%;
-}
-@media(max-width:1130px){
-    body{
-        font-size: 80%;
-    }
-}
-@media(max-width:900px){
-    body{
-        font-size: 70%;
-    }
-    .theme-switch-wrapper {
-      width:25%
-    }
-}
-@media(max-width:790px){
-  .Menu{
-   display: none;
-    width: 100%;
-  }
-  .theme-switch-wrapper {
-    width:35%
-  }
-  .slidebar{
-    position: fixed;
-    display: block;
-    left: 0;
-    top: 7%;
-    width: 100%;
-    height: 100%;
-  }
-  .slidebar a{
-    margin-top: 5%;
-    display: block;
-    text-align: center;
-    font-size: 1rem;
-  }
-  .sliderbardarkmood a{
+nav a:hover{
+  background-color:  blue;;
   color: white;
-  background-color: black;
-  }
-  .hanbargar{
-    display: block;
-    font-size: 1rem;
-  }
- 
-  nav .logo{
-    width: 20%;
-    margin-right: 50%;
-  }
-  nav.theme-switch-wrapper{
-    width: 70%;
-  }
-  .theme-switch {
-    height: 25px;
-    width: 50px;
-  }
-  .slider:before {
-    background-color: white;
-    bottom: 1px;
-    height: 22px;
-    width: 22px;
-  }
-  input:checked + .slider:before {
-    transform: translateX(21px);
-  }
+  transition: 0.2s;
 }
-@media(max-width:560px){
-  body{
-      font-size: 60%;
-  }
-  nav .logo{
-    margin-right: 40%;
-  }
-  .theme-switch {
-    height: 20px;
-    width: 40px;
-  }
-  .slider:before {
-    background-color: white;
-    bottom: 2px;
-    height: 16px;
-    width: 16px;
-  }
-  .slidebar {
-    margin-top: 5%;
-  }
-  input:checked + .slider:before {
-    transform: translateX(15px);
-  }
-}
-@media(max-width:470px){
-  body{
-      font-size: 50%;
-  }
-}
-@media(max-width:390px){
-  body{
-      font-size:40%;
-  }
-  nav{
-    align-items: center;
-  }
-}
-@media(max-width:330px){
-  nav .logo{
-   width: 40%;
-   margin-right: 0;
-  }
-  nav .theme-switch-wrapper{
-    width: 45%;
-  }
-}
-
 /* Home  */
-#Home{
-  position: relative;
-  padding: 8% 15%;
-  display: flex;
-  flex-wrap: wrap;
- justify-content: center;
-}
-#Home .context{
-  position: relative;
- align-items: center;
- margin: auto 0;
- animation:fadeInLeft  ;
- animation-duration: 1s;
-}
 #Home img{
-  border-radius: 50%;
-  width:450px;
-  height: 450px;
-  object-fit: cover;
-  margin-left: 30%;
-  animation: fadeInRight;
-  animation-duration: 1s;
+  float: right;
 }
-#Home h1{
-  line-height: normal;
-}
-#Home h5,#Home span{
-  color: var(--main-color);
+#Home span{
+  color: blue;
 }
 #Home button{
-  padding:2% 7%;
-  font-size: 0.7rem;
-  margin: 3%;
-  border-style: outset;
-  border-radius: 2px;
-  border: 1px solid black;
-  background-color:white ;
-  cursor: pointer;
-}
-#Home button:hover{
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-#Home button:last-child{
-  background-color: var(--main-color);
-  color: white;
-}
-.buttondarkmood{
-  color: white;
-  border: 1px solid white;
-}
-@media(max-width:990px){
-  #Home{
-    padding: 10% 15%;
-   justify-content: center;
-  }
-  #Home img{
-    border-radius: 50%;
-    width:300px;
-    height: 300px;
-    object-fit: cover;
-    margin-left: 20%;
-  }
-}
-@media(max-width:730px){
-  #Home{
-    padding: 10% ;
-   justify-content: center;
-   width: 100%;
-  }
-  #Home img{
-   margin-top: 5%;
-    margin-left: 10%;
-    width:250px;
-    height: 250px;
-  }
-}
-@media(max-width:580px){
- #Home button {
-  padding:2% 4%;
-  font-size: 90%;
- }
- #Home img{
-  margin-top: 5%;
-   margin-left: 10%;
-   width:200px;
-   height: 200px;
- }
-}
-@media(max-width:480px){
-  #Home{
-    padding: 20% 0;
-  }
-  #Home .context{
-    text-align: center;
-  }
-  #Home img{
-   margin-top: 5%;
-    margin-left: 5%;
-    width:150px;
-    height: 150px;
-  }
- }
-.Clients{
- margin: 0 5%;
- display: flex;
- animation: fadeInDown;
- animation-duration: 1s;
-}
-.Clients .header{
-  width: 25%;
- padding: 3% 0;
- color: var(--main-color);
-}
-.Clients .SocialMedia {
-  display: grid;
-  width: 100%;
-  margin: 0 5%;
-  grid-template-columns: repeat(4,1fr);
-}
-.Clients .SocialMedia div{
-  display: flex;
-  align-items: center;
-  margin: 3% 0;
-}
-.Clients .SocialMedia div h3{
-  margin-left: 5%;
-}
-.Clients img{
-  width: 50px;
-  object-fit: cover;
-}
-@media(max-width:870px){
-  .Clients{
-    display: block;
-    margin: 0;
-   
-   }
-   .Clients .header{
-    margin: 0 auto;
-     width: 100%;
-     text-align: center;
-   }
-   .Clients .header br{
-     display: none;
-   }
-}
-@media(max-width:600px){
-  .Clients .SocialMedia {
-    grid-template-columns: repeat(3,1fr);
-  }
-  .Clients .SocialMedia div{
-    justify-content: center;
-  }
-  .Clients img{
-    width: 30px;
-  }
-}
-@media(max-width:300px){
-  .Clients .SocialMedia {
-    grid-template-columns: repeat(2,1fr);
-  }
+  background: none;
+  border: 3px solid  blue;;
+  color:  blue;;
 }
 
+/* About  */
+#About span{
+  color:  blue;;
+
+}
+#About p{
+  text-align: justify;
+}
+#About .col-3 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 5%;
+}
+
+#About .col-3:nth-child(1){
+  background-color: grey;
+  border-bottom: black;
+  color: white;
+}
+#About .col-3:nth-child(2){
+  background-color: blue;
+  border-bottom: blue;
+}
+#About .col-3:nth-child(3){
+  background-color: green;
+  border-bottom: green;
+}
+#About .col-3:nth-child(4){
+  background-color: red;
+  border-bottom: black;
+}
+
+/* Projects  */
+#Projects  span{
+  color: blue;
+}
+#Projects .container .col{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;  width: 220px;
+  margin: 0 1%;
+  border-radius: 10px;
+}
+#Projects img{
+  height:150px ;
+}
+.ProjectFooter{
+  height: 400px;
+  width: 100%;
+  background-image:
+  linear-gradient(to bottom, rgba(25, 26, 28, 0.52), rgba(30, 29, 29, 0.73)),
+  url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg");
+  background-size: cover;
+  background-position: center ;
+  align-items: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+#Education h4{
+  color: blue;
+}
+#Education .card{
+  background-color: gainsboro;
+  margin: 2%;
+  height: 55px;
+  transition: 0.3s;
+}
+#Education .cardshow{
+  height: 100%;
+}
+#Education h5{
+  font-weight: normal;
+  padding: 1% 2%;
+  cursor: pointer;
+}
+#Education .fa-plus{
+  color: red;
+}
+#Education .fa-minus{
+  display: none;
+}
+#Education .hide{
+  color: red;
+}
+#Education .show{
+  display: block;
+  color: white;
+}
+.headerbg{
+  background-color: rgb(68, 6, 237);
+  color: white;
+}
+#Education span{
+  position: absolute;
+  right: 0;
+  padding-right: 2%;
+  color: rgb(55, 12, 211);
+}
+#Education p{
+  overflow: hidden;
+  margin: 1% 2%;
+}

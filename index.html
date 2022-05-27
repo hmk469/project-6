@@ -4,90 +4,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profolio Website</title>
+    <title>Profolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-           <h1>Al-Raza</h1>
-        </div>
-        <div class="Menu">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Services">Services</a>
-            <a href="#Porfolio">Profolio</a>
-            <a href="#Price">Price</a>
-            <a href="#Contact">Contact</a>
-        </div>
-          <div class="theme-switch-wrapper">
-            <i class="fas fa-sun"></i>
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-          </label>
-          <i class="fas fa-moon"></i>
-          <em> Dark Mode</em>
-        </div>
-        <div class="hanbargar">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
-    <div id="Home">
-               <div class="context">
-                <h5>Welcome To My World</h5>
-                <h1>Hi I Am <br>Hassan <span>MeMon</span></h1>
-                <h3>A Professional <span>Web Dev</span></h3>
-                <button>Art Work</button>
-                <button>Meet Us</button>
+    <div class="container-fluid">
+        <div class="row ">
+          <nav  class=" col-3 bg-light position-fixed text-center " >
+            <img src="images/profile.png" alt="">
+            <h1 class="fs-3">Htet Min Khant</h1>
+            <h3 class=" fs-5">Web Developer</h3>
+            <div class="Menu ">
+                <a class=" my-2 p-2 rounded" href="#Home">
+                    <i class="fa-solid fa-house mx-1"></i>
+                    Home
+                </a>
+                <a class=" my-2 p-2 rounded"  href="#About">
+                    <i class="fa-solid fa-pencil mx-1"></i>
+                    About Me
+                </a>
+                <a class=" my-2 p-2 rounded"  href="#Project">
+                    <i class="fa-solid fa-file"></i>
+                    Project
+                </a>
+                <a class=" my-2 p-2 rounded"  href="#Skills">
+                    <i class="fa-solid fa-business-time"></i>
+                    Skills
+                </a>
+                <a class=" my-2 p-2 rounded" href="#Education">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Education
+                </a>
+                <a class=" my-2 p-2 rounded"  href="#OurService">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    Our Service
+                </a>
+                <a class=" my-2 p-2 rounded"  href="#Blog">
+                    <i class="fa-solid fa-globe"></i>
+                    Blog
+                </a>
+                <a class=" my-2 p-2 rounded"  href="#Review">
+                    <i class="fa-solid fa-book"></i>
+                    Our Review
+                </a>
+                <a  class=" my-2 p-2 rounded" href="#Work">
+                    <i class="fa-solid fa-computer"></i>
+                    Our Work
+                </a>
+                <a class=" my-2 p-2 rounded" href="#Contact">
+                    <i class="fa-solid fa-address-card"></i>
+                    Contact Us
+                </a>
+            </div>
+          </nav>
+          <div class="col-3"></div>
+          <div class="col  ">
+           <div  class="container  my-3 " id="Home">
+           <div class="row align-items-center">
+            <div class="title col-8 align-content-center">
+                <h1>I am a <span>Frontend <br> Web Developer</span></h1>
+                <p>Download CV Click The Button To Download My CV.Hire Me Now!</p>
+                <button class="btn p-2 fw-bold rounded p-1">Download CV</button>
+           </div>
+           <div class="profile col-3">
+               <img class=" img-fluid ps-3" src="images/myprofile.png" alt="">
+           </div>
+                </div>
+           </div>
+           <div class="px-2" id="About">
+               <h2>About <span>Me</span></h2>
+               <h4 >Hello! I'm Htet Min Khant</h4>
+               <p class=" text fw-light" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut atque id non quas assumenda quam neque. Temporibus iure deserunt necessitatibus reiciendis sequi accusamus impedit, aliquid, aut ut, aliquam iste!</p>
+               <p class=" text fw-light " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, illum quod quas velit reiciendis quaerat quia, quos qui recusandae nesciunt fugiat maiores non minus impedit molestias adipisci consequatur officia incidunt.</p>
+               <div class="container-fluid">
+                   <div class="row justify-content-around">
+                    <div class="col-3   text-body py-4 text-center rounded" style="width: 200px;height: 200px;">
+                        <img class=" img-fluid mb-3" src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="">
+                       <h3 class="fs-5"> Card Design</h3>
+                      </div>
+                      <div class="col-3    text-body py-4 text-center  rounded"style="width: 200px;height: 200px">
+                        <img class=" img-fluid  mb-3" src="https://cdn-icons.flaticon.com/png/512/1960/premium/1960158.png?token=exp=1653288734~hmac=15143e6765ec570f3b2babd6c1467cf5" alt="">
+                       <h3 class="fs-5">Web Design</h3>
+                      </div>
+                      <div class="col-3    text-body py-4 text-center rounded"style="width: 200px;height: 200px">
+                        <img  class=" img-fluid  mb-3" src="https://cdn-icons-png.flaticon.com/512/2942/2942789.png" alt="">
+                      <h3 class="fs-5"> Applicatoins</h3>
+                      </div>
+                      <div class="col-3   text-body py-4 text-center rounded"style="width: 200px;height: 200px">
+                        <img class=" img-fluid  mb-3" src="https://cdn-icons.flaticon.com/png/512/2930/premium/2930685.png?token=exp=1653288792~hmac=a8078e4684387e674e0ff54dc01419ac" alt="">
+                       <h3 class="fs-5"> Software</h3>
+                      </div>
+                   </div>
                </div>
-               <div>
-                   <img src="https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg" alt="">
+               <div class="card mt-4">
+                  <div class="card-body bg-dark text-white">
+                    <h2>I Happy T tell You</h2>
+                    <h2>That 300+ Porjects Had Been Done Successfully</h2>
+                    <button class="btn btn-light text-info fw-bold my-3">Learn More</button>
+                  </div>
                </div>
-    </div>
-    <div class="Clients">
-      <div class="header"><h3>Meet My <br>Recent Clients</h3></div>
-      <div class="SocialMedia">
-          <div>
-            <img src="images/1.png" alt="">
-            <h3>Microsoft</h3>
+           </div>
+           <div class="mx-2 mt-5" id="Project">
+               <p>What I <span>DO?</span></p>
+               <h3>HERE ARE SOME OF MY <span >  EXPERTISE</h3>
+                   <div class="container">
+                       <div class="row">
+                           <div class="col text-center " >
+                            <img class=" img-fluid  mb-3" src="images/html.png" alt="">
+                               <h3>HTML</h3>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur, saepe natus qui alias voluptatibus reprehenderit magnam adipisci sunt odio quaerat odit. Provident sequi nemo laudantium ad fugiat eveniet vitae.</p>
+                           </div>
+                           <div class="col text-center">
+                               <img class=" img-fluid  mb-3"src="images/css.png" alt="">
+                            <h3>CSS</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo in, similique ipsa quaerat, repellendus beatae, tenetur non molestias eum incidunt asperiores. Veritatis aperiam non nihil provident corporis eveniet voluptatibus suscipit?</p>
+                        </div>
+                        <div class="col text-center">
+                            <img class=" img-fluid pt-2  mb-3" src="images/js.png" alt="">
+                            <h3>JAVASCRIPT</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo laudantium eaque dignissimos quod, ratione, non quas asperiores nihil dolorum rerum nulla, consequuntur animi odit autem dicta minus doloribus sint. Nihil.</p>
+                        </div>
+                       </div>
+                   </div>
+
+           </div>
+           <div  class="container  mt-5 ">
+              <div class="row  ProjectFooter">
+                <div class="col-3 text-center">
+                    <h1 class=" text-white">200</h1>
+                    <p class=" text-white text-opacity-50"> loremipsum</p>
+                </div>
+                <div class="col-3 text-center align-items-center">
+                 <h1 class=" text-white">200</h1>
+                 <p class=" text-white text-opacity-50">loremipsum</p>
+             </div>
+             <div class="col-3 text-center align-items-center">
+                 <h1 class=" text-white">200</h1>
+                 <p class=" text-white text-opacity-50">loremipsum</p>
+             </div>
+             <div class="col-3 text-center align-items-center">
+                 <h1 class=" text-white">200</h1>
+                 <p class=" text-white text-opacity-50">loremipsum</p>
+             </div>
+              </div>
+           </div>
+           <div class=" mt-5 mx-3" id="Skills">
+            <h3>My  <span>Skills</span></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, dolorem non. Perferendis ut quibusdam obcaecati distinctio voluptate odio officia, hic neque a explicabo itaque totam alias aliquam, at maiores similique!</p>
+            <div class="contain">
+                <div class="row">
+                    <div class="col-5 mx-3">
+                      <h5>HTML</h5>
+                        <div class="bar bg-secondary rounded" style="width: 100%;height: 5px;">
+                            <div class=" bg-danger" style="width: 95%;height: 5px;"></div>
+                        </div>
+                        <p class="text-danger text-end">95%</p>
+                    </div>
+                    <div class="col-5 mx-3">
+                        <h5>CSS</h5>
+                          <div class=" bg-secondary rounded" style="width: 100%;height: 5px;">
+                              <div class="text-secondary bg-primary" style="width: 80%;height: 5px;"></div>
+                          </div>
+                          <p class="text-secondary text-end">80%</p>
+                      </div>
+                      <div class="col-5 mx-3">
+                        <h5 >JAVASCRIPT</h5>
+                          <div class=" bg-secondary rounded" style="width: 100%;height: 5px;">
+                              <div class=" bg-warning" style="width: 95%;height: 5px;"></div>
+                          </div>
+                          <p class=" text-warning text-end">95%</p>
+                      </div>
+                      <div class="col-5  mx-3">
+                        <h5>BOOTSTRAP</h5>
+                          <div class=" bg-secondary rounded" style="width: 100%;height: 5px;">
+                              <div style="width: 60%;height:5px; background-color: rgb(74, 6, 170);"></div>
+                          </div>
+                          <p style="color: rgb(74, 6, 170);;" class=" text-end">95%</p>
+                      </div>
+                </div>
+            </div>
+           </div>
+           <div id="Education">
+               <h4 >Education </h4>
+               <div class="card">
+                   <h5>Highter Deploma in computer Science.
+                   <span class="fs-4"><i class="fa-solid fa-plus"></i></span>
+                   </h5>
+                   <p class=" fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam aliquid necessitatibus illo quod omnis eos, mollitia praesentium sunt tempora fugiat voluptatem ducimus quis, inventore fugit unde veniam, ex nihil!</p>
+               </div>
+               <div class="card">
+                <h5>Deploma in information Technolgy
+                <span class="fs-4"><i class="fa-solid fa-plus"></i></i></span>
+                </h5>
+                <p class=" fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam aliquid necessitatibus illo quod omnis eos, mollitia praesentium sunt tempora fugiat voluptatem ducimus quis, inventore fugit unde veniam, ex nihil!</p>
+            </div>
+            <div class="card">
+                <h5>Certificate in Deskop Publishing
+                <span class="fs-4"><i class="fa-solid fa-plus"></i></span>
+                </h5>
+                <p class=" fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam aliquid necessitatibus illo quod omnis eos, mollitia praesentium sunt tempora fugiat voluptatem ducimus quis, inventore fugit unde veniam, ex nihil!</p>
+            </div>
+            <div class="card">
+                <h5>Deploma in Computer Technology
+                <span class="fs-4"><i class="fa-solid fa-plus"></i></span>
+                </h5>
+                <p class=" fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam aliquid necessitatibus illo quod omnis eos, mollitia praesentium sunt tempora fugiat voluptatem ducimus quis, inventore fugit unde veniam, ex nihil!</p>
+            </div>
+            <div class="card">
+                <h5>Certficate in Graphic Design
+                <span class="fs-4">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-minus"></i>
+                </span> 
+                </h5>
+                <p class=" fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam aliquid necessitatibus illo quod omnis eos, mollitia praesentium sunt tempora fugiat voluptatem ducimus quis, inventore fugit unde veniam, ex nihil!</p>
+            </div>
+           </div>
           </div>
-          <div>
-            <img src="images/2.png" alt="">
-            <h3>Microsoft</h3>
-          </div>
-          <div>
-            <img src="images/3.png" alt="">
-            <h3>Microsoft</h3>
-          </div>
-          <div>
-            <img src="images/4.png" alt="">
-            <h3>Microsoft</h3>
-          </div>
-          <div>
-            <img src="images/5.png" alt="">
-            <h3>Microsoft</h3>
-          </div>
-          <div>
-            <img src="images/6.png" alt="">
-            <h3>Microsoft</h3>
-          </div>
-          <div>
-            <img src="images/7.png" alt="">
-            <h3>Microsoft</h3>
-          </div>
-          <div>
-            <img src="images/8.png" alt="">
-            <h3>Microsoft</h3>
-          </div>
+        </div>
       </div>
-    </div>
 
-
-    
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="app.js"></script>
+      <script src="app.js"></script>
 </body>
 </html>
